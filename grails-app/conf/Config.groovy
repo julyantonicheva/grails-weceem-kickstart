@@ -43,7 +43,7 @@ grails.resources.adhoc.includes = ['/images/**', '/css/**', '/js/**', '/plugins/
 // Legacy setting for codec used to encode data with ${}
 // vanilla: grails.views.default.codec = "html"
 // weceem: grails.views.default.codec = "none"
-grails.views.default.codec = "none"
+grails.views.default.codec = 'none'
 
 // The default scope for controllers. May be prototype, session or singleton.
 // If unspecified, controllers are prototype scoped.
@@ -57,7 +57,9 @@ grails {
             htmlcodec = 'xml' // use xml escaping instead of HTML4 escaping
             codecs {
                 expression = 'html' // escapes values inside ${}
-                scriptlet = 'html' // escapes output from scriptlets in GSPs
+				// vanilla: scriptlet = 'html'
+				// weceem: 'none'
+                scriptlet = 'none' // escapes output from scriptlets in GSPs
                 taglib = 'none' // escapes output from taglibs
                 staticparts = 'none' // escapes output from static template parts
             }
