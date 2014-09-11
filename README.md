@@ -16,4 +16,6 @@ See also
 * older version of Grails and Weceem - https://github.com/lrkwz/weceem-skeleton
 * much older version of Grails and Weceem - https://github.com/dawsonsystems/CMS
 
-
+Issues
+------
+* Default site displays "Product" tab with CDATA HTML.
