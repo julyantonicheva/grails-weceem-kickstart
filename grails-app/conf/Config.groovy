@@ -39,6 +39,8 @@ grails.mime.types = [ // the first one is the default format
 // What URL patterns should be processed by the resources plugin
 grails.resources.adhoc.patterns = ['/images/*', '/css/*', '/js/*', '/plugins/*']
 grails.resources.adhoc.includes = ['/images/**', '/css/**', '/js/**', '/plugins/**']
+// weceem: grails.resources.adhoc.excludes=['/plugins/weceem-1.2']
+grails.resources.adhoc.excludes=['/plugins/weceem-1.2']
 
 // Legacy setting for codec used to encode data with ${}
 // vanilla: grails.views.default.codec = "html"
