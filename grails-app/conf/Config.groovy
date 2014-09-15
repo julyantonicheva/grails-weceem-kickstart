@@ -58,7 +58,7 @@ grails {
             encoding = 'UTF-8'
             htmlcodec = 'xml' // use xml escaping instead of HTML4 escaping
             codecs {
-                expression = 'html' // escapes values inside ${}
+                expression = 'none' // escapes values inside ${}
 				// vanilla: scriptlet = 'html'
 				// weceem: 'none'
                 scriptlet = 'none' // escapes output from scriptlets in GSPs
